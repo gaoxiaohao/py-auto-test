@@ -1,0 +1,24 @@
+# Allure 报告目录
+allure-report/
+allure-results/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# IDE 配置（可选，根据你使用的 IDE）
+.vscode/
+.idea/
+
+# 日志文件
+*.log
+
+# 本地配置文件（如果你有本地配置不想提交）
+config/setting.ini   # 如果包含本地地址或敏感信息

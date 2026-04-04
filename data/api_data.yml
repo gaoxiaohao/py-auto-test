@@ -1,0 +1,31 @@
+test_apply_credit:
+  - name: "授信申请-正常处理中"
+    request:
+      outerOrderId: "TEST001"
+      businessParams:
+        phone: "18888888888"
+        amount: 5000
+    expect:
+      success: True
+      retStatus: "111111"
+      retMsg: "处理中"
+  - name: "授信申请-订单重复"
+    request:
+      outerOrderId: "TEST002"
+      businessParams:
+        phone: "18888888880"
+        amount: 5000
+    expect:
+      success: False
+      retStatus: "222222"
+      retMsg: "订单重复"
+  - name: "授信申请-其他失败"
+    request:
+      outerOrderId: "TEST003"
+      businessParams:
+        phone: "18888888881"
+        amount: 5000
+    expect:
+      success: False
+      retStatus: "999999"
+      retMsg: "失败-其他"

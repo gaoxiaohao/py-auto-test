@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54540020-74aa-4f7f-8772-1d7b325ffaf1" name="Changes" comment="python+pytest+allure-推送远程仓库">
+    <list default="true" id="54540020-74aa-4f7f-8772-1d7b325ffaf1" name="Changes" comment="python+pytest+allure-变更allure依赖">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +210,7 @@
       <workItem from="1775525198245" duration="10636000" />
       <workItem from="1775624846571" duration="5340000" />
       <workItem from="1775700840377" duration="4371000" />
-      <workItem from="1776073431137" duration="2027000" />
+      <workItem from="1776073431137" duration="3429000" />
     </task>
     <task id="LOCAL-00001" summary="python+pytest+allure基本脚手架">
       <option name="closed" value="true" />
@@ -228,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776073812321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="python+pytest+allure-变更allure依赖">
+      <option name="closed" value="true" />
+      <created>1776077076729</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776077076729</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +256,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="python+pytest+allure基本脚手架" />
     <MESSAGE value="python+pytest+allure-推送远程仓库" />
-    <option name="LAST_COMMIT_MESSAGE" value="python+pytest+allure-推送远程仓库" />
+    <MESSAGE value="python+pytest+allure-变更allure依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="python+pytest+allure-变更allure依赖" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ppd_automationtest$logger.coverage" NAME="logger Coverage Results" MODIFIED="1775205252959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />

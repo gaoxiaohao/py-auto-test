@@ -1,0 +1,12 @@
+test_apply_query_credit:
+  - name: "授信通过，查询成功"
+    request:
+      outerOrderId: "88888888"
+      businessParams:
+        phone: "18888888888"
+        amount: 5000
+    expect:
+      success: True
+      retStatus: "000000"
+      retMsg: "授信成功"
+

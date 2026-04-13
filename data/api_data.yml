@@ -29,3 +29,54 @@ test_apply_credit:
       success: False
       retStatus: "999999"
       retMsg: "失败-其他"
+
+test_query_creidt:
+  - name: "授信结果-成功"
+    request:
+      outerOrderId: "88888888"
+    expect:
+      success: True
+      retStatus: "000000"
+      retMsg: "成功"
+  - name: "授信结果-风控拒绝"
+    request:
+      outerOrderId: "88888882"
+    expect:
+      success: False
+      retStatus: "RIS001"
+      retMsg: "风控拒绝"
+  - name: "授信结果-联网核查不通过"
+    request:
+      outerOrderId: "888888883"
+    expect:
+      success: False
+      retStatus: "BAS001"
+      retMsg: "联网核查不通过"
+  - name: "授信结果-验四不通过"
+    request:
+      outerOrderId: "888888886"
+    expect:
+      success: False
+      retStatus: "BAS002"
+      retMsg: "验四不通过"
+  - name: "授信结果-客户开立失败"
+    request:
+      outerOrderId: "888888884"
+    expect:
+      success: False
+      retStatus: "BAS003"
+      retMsg: "客户开立失败"
+  - name: "授信结果-重复授信"
+    request:
+      outerOrderId: "888888885"
+    expect:
+      success: False
+      retStatus: "BAS004"
+      retMsg: "重复授信"
+  - name: "授信结果-订单不存在"
+    request:
+      outerOrderId: "99999999"
+    expect:
+      success: False
+      retStatus: "333333"
+      retMsg: "订单不存在"

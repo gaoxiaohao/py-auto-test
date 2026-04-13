@@ -1,10 +1,9 @@
+from common.read_data import FileBasePath
 from core.http_client import HttpClient
-from pathlib import Path
 import configparser
 
-BASE_PATH = Path(__file__).resolve().parent.parent
+BASE_PATH = FileBasePath.get_file_base_path()
 config = configparser.ConfigParser()
-print(BASE_PATH)
 config.read(BASE_PATH /'config'/'setting.ini', encoding='utf-8')
 api_root_url = config.get("host", "api_root_url")
 
